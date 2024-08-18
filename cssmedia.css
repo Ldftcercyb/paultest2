@@ -112,34 +112,34 @@
     header {
         width: 100%;
     }
+    .kitchen{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .backgrounddiv img{
+        width: 100%;
+        height: 100%;
+    }
+    .backgrounddiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-left{
+        margin-bottom: 5%;
+        width: 100%;
+        display: block;
+    }
+    .d2{
+        display: none;
+    }
+    .bar {
+        display: flex;
+        margin-top: 5%;
+        width: 100%;
+    }
 }
 #click:checked~.secionone{
     margin-bottom: 5%;
     background-color: black;
-}
-.kitchen{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.backgrounddiv img{
-    width: 100%;
-    height: 100%;
-}
-.backgrounddiv{
-    display: flex;
-    flex-wrap: wrap;
-}
-.sec-left{
-    margin-bottom: 5%;
-    width: 100%;
-    display: block;
-}
-.d2{
-    display: none;
-}
-.bar {
-    display: flex;
-    margin-top: 5%;
-    width: 100%;
 }
