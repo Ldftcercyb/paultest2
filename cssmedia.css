@@ -1,0 +1,145 @@
+@media screen and (max-width:1000px) {
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 150px;
+
+
+    }
+
+    .mediaiphone {
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: block;
+    }
+
+    .navigationmenu {
+        display: none;
+    }
+
+
+
+
+
+    .center {
+        width: 20%;
+    }
+
+
+
+    .left .logo img {
+        width: 100%;
+        margin-top: 30px;
+        height: 100% auto;
+    }
+
+
+
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    .telephonehref {
+        height: 30%;
+        gap: 2rem;
+
+    }
+
+    .telephonehref img {
+        width: 15%;
+    }
+
+    .right .contact .instagramhref {
+        height: 50%;
+        gap: 2rem;
+
+        img {
+            width: 9%;
+        }
+    }
+
+    .right {
+        width: 35%;
+    }
+
+
+
+    .navigationmenu {
+        width: 300px;
+    }
+
+
+
+
+
+
+    .check {
+        display: block;
+
+        img {
+            width: 100px;
+        }
+    }
+
+
+    #click:checked~.navigationmenu {
+        height: 60px;
+        position: absolute;
+        width: 100%;
+        top: 8%;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        background-color: lightgray;
+        margin-bottom: 5%;
+        transition: 2s;
+    }
+
+    #click:checked~.navigationmenu h1 {
+        color: green;
+        transition: 2s;
+        border: 2px solid black;
+        border-radius: 40% 0;
+        padding: 10px;
+    }
+
+    header {
+        width: 100%;
+    }
+}
+#click:checked~.secionone{
+    margin-bottom: 5%;
+    background-color: black;
+}
+.kitchen{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.backgrounddiv img{
+    width: 100%;
+    height: 100%;
+}
+.backgrounddiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec-left{
+    margin-bottom: 5%;
+    width: 100%;
+    display: block;
+}
+.d2{
+    display: none;
+}
+.bar {
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+}
