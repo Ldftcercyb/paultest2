@@ -1,145 +1,216 @@
-@media screen and (max-width:1000px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        height: 150px;
+header {
+    width: 100%;
+    height: 70px;
+    background-color: lightgray;
+    display: flex;
+}
 
+.mediaiphone {
+    display: none;
+}
 
-    }
+.mediatext {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
 
-    .mediaiphone {
-        width: 130px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        display: block;
-    }
+.center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    justify-content: space-around;
 
-    .navigationmenu {
-        display: none;
-    }
+}
 
+.center .logo {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
 
-
-
-
-    .center {
-        width: 20%;
-    }
-
-
-
-    .left .logo img {
-        width: 100%;
-        margin-top: 30px;
-        height: 100% auto;
-    }
-
-
-
-    .contact {
-        flex-wrap: wrap;
-    }
-
-    .telephonehref {
-        height: 30%;
-        gap: 2rem;
-
-    }
-
-    .telephonehref img {
-        width: 15%;
-    }
-
-    .right .contact .instagramhref {
-        height: 50%;
-        gap: 2rem;
-
-        img {
-            width: 9%;
-        }
-    }
-
-    .right {
-        width: 35%;
-    }
-
-
-
-    .navigationmenu {
-        width: 300px;
-    }
-
-
-
-
-
-
-    .check {
-        display: block;
-
-        img {
-            width: 100px;
-        }
-    }
-
-
-    #click:checked~.navigationmenu {
-        height: 60px;
-        position: absolute;
-        width: 100%;
-        top: 8%;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-        background-color: lightgray;
-        margin-bottom: 5%;
-        transition: 2s;
-    }
-
-    #click:checked~.navigationmenu h1 {
-        color: green;
-        transition: 2s;
-        border: 2px solid black;
-        border-radius: 40% 0;
-        padding: 10px;
-    }
-
-    header {
-        width: 100%;
-    }
-    .kitchen{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .backgrounddiv img{
-        width: 100%;
-        height: 100%;
-    }
-    .backgrounddiv{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sec-left{
-        margin-bottom: 5%;
-        width: 100%;
-        display: block;
-    }
-    .d2{
-        display: none;
-    }
-    .bar {
-        display: flex;
-        margin-top: 5%;
-        width: 100%;
+    h1 {
+        font-size: 30px;
     }
 }
-#click:checked~.secionone{
-    margin-bottom: 5%;
-    background-color: black;
+
+.left .logo img {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    width: 60%;
+}
+
+
+.navigationmenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.navigationmenu {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right {
+    width: 25%;
+    height: 100%;
+}
+
+.right .contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.right .contact a {
+    height: 100%;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.right .contact .instagramhref {
+    gap: 2rem;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        color: red;
+    }
+}
+
+
+
+#click {
+    display: none;
+}
+
+.check {
+    display: none;
+}
+
+.right .contact .instagramhref img {
+    width: 10%;
+}
+
+
+
+.telephonehref {
+    gap: 2rem;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        color: darkorange;
+    }
+}
+
+.telephonehref img {
+    width: 20%;
+
+}
+
+/* section one */
+.sectionone {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    gap: 2rem;
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+
+.sec-left {
+    flex-wrap: wrap;
+
+    display: flex;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.kitchen {
+    display: flex;
+    width: 95%;
+    gap: 1rem;
+    height: 50%;
+}
+
+.kitchen img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bar {
+    display: flex;
+    width: 95%;
+    gap: 1rem;
+    height: 50%;
+}
+
+.backgrounddiv {
+    width: 100%;
+    height: 100%;
+}
+
+.bar .backgrounddiv img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sec-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.desert {
+    display: flex;
+    gap: 2rem;
+    width: 95%;
+    height: 50%;
+}
+
+.bakery {
+    gap: 1rem;
+    display: flex;
+    width: 95%;
+    height: 50%;
+}
+
+
+.desert img {
+    width: 100% auto;
+    height: 100%;
 }
